@@ -128,14 +128,31 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-/* versione small / mobile con larghezza da 480px in giù */
+/* versione medium / tablet con larghezza da 768px in giù */
 
-/* /versione small / mobile con larghezza da 480px in giù */
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
 }
 
 /* versione medium / tablet con larghezza da 768px in giù */
 
-@media screen and (min-width: 768px) {
+/* versione small / mobile con larghezza da 480px in giù */
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 60px;
+  }
 }
+
+/* /versione small / mobile con larghezza da 480px in giù */
